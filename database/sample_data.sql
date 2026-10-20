@@ -1,0 +1,10 @@
+INSERT INTO clientes(nombre,telefono,correo) VALUES('Ana López','5555-1000','ana@example.com');
+INSERT INTO clientes(nombre,telefono,correo) VALUES('Carlos Méndez','5555-2000','carlos@example.com');
+INSERT INTO mecanicos(nombre,telefono,especialidad) VALUES('Luis Pérez','5555-3000','Motor');
+INSERT INTO mecanicos(nombre,telefono,especialidad) VALUES('Mario Gómez','5555-4000','Frenos');
+INSERT INTO vehiculos(id_cliente,placa,marca,modelo,anio,descripcion) VALUES(1,'P123ABC','Toyota','Corolla',2018,'Sedán');
+INSERT INTO repuestos(nombre,descripcion,precio,existencia) VALUES('Filtro de aceite','Filtro estándar',45,12);
+INSERT INTO repuestos(nombre,descripcion,precio,existencia) VALUES('Pastillas de freno','Juego delantero',180,5);
+INSERT INTO servicios(descripcion,costo_mano_obra) VALUES('Cambio de aceite',100);
+INSERT INTO servicios(descripcion,costo_mano_obra) VALUES('Revisión de frenos',150);
+COMMIT;

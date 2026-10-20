@@ -1,0 +1,8 @@
+@startuml
+abstract class Persona { -id:int; -nombre:String; -telefono:String; +getTipo():String }
+class Cliente { -correo:String; +getTipo():String }
+class Mecanico { -especialidad:String; +getTipo():String }
+class OrdenService { +agregarRepuesto(ordenId:int,repuestoId:int,cantidad:int); +cancelarOrden(ordenId:int) }
+Persona <|-- Cliente
+Persona <|-- Mecanico
+@enduml
