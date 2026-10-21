@@ -34,15 +34,21 @@ public final class Database {
         );
     }
 
-    public static void testConnection()
-            throws SQLException {
-
-        try (Connection connection = getConnection()) {
-            if (!connection.isValid(10)) {
-                throw new SQLException(
-                        "La conexión con Oracle no es válida."
-                );
-            }
+public static void testConnection() throws SQLException {
+    try (Connection connection = getConnection()) {
+        if (connection == null || !connection.isValid(10)) {
+            throw new SQLException("La conexión con Oracle no es válida.");
         }
+
+        System.out.println("Conexión Oracle correcta.");
+        System.out.println("Usuario conectado: " +
+                connection.getMetaData().getUserName());
+        System.out.println("Base de datos: " +
+                connection.getMetaData().getDatabaseProductName());
     }
-}
+ }
+
+    
+  }
+    
+
