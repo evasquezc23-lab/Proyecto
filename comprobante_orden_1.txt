@@ -1,0 +1,14 @@
+TALLER EL ÚLTIMO ARRANQUE
+COMPROBANTE DE REPARACIÓN
+Fecha: 22/10/2026 01:18
+Orden: 1
+
+Estado: FINALIZADA
+Problema: Bateria
+Vehículo: Mazda 2007
+Placa: P635LND
+Mecánico: Josue
+Total: Q 600
+
+SERVICIOS REALIZADOS
+- Servicio Menor — Q 600
